@@ -93,7 +93,7 @@ bind O login off
 bind } history
 
 #Hubert hardsatus
-hardstatus lastline '%{.gk}%?%-LW  %?%{+b ..y}%n%f %t%{-b ..k}%?%+LW%?%=%H %0C'
+hardstatus alwayslastline '%{.gk}%?%-LW  %?%{+b ..y}%n%f %t%{-b ..k}%?%+LW%?%=%H %0C'
 
 defc1 off
 defencoding utf8
