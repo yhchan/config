@@ -8,6 +8,7 @@ autoload -U compinit promptinit
 compinit
 promptinit
 
+export TERM=xterm-256color
 
 if [[ -z "$?WINDOW" ]]; then
     export PS1="%m [%~] -%n- "
