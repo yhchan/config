@@ -16,7 +16,7 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set softtabstop=4
-set sw=4
+set shiftwidth=4
 set background=dark
 set expandtab
 
@@ -76,4 +76,11 @@ highlight User2 term=underline cterm=underline ctermfg=green
 highlight User3 term=underline cterm=underline ctermfg=yellow
 highlight User4 term=underline cterm=underline ctermfg=white
 highlight User5 ctermfg=cyan
-highlight User6 ctermfg=white 
+highlight User6 ctermfg=white
+
+" Numbers for programming files
+autocmd FileType c,h,cpp,php,hpp,java,py set number
+
+" Google C++ Style
+autocmd FileType c,h,cpp,hpp set softtabstop=2
+autocmd FileType c,h,cpp,hpp set shiftwidth=2
