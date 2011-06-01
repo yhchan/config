@@ -11,9 +11,9 @@ promptinit
 export TERM=xterm-256color
 
 if [[ -z "$?WINDOW" ]]; then
-    export PS1="%m [%~] -%n- "
+    export PS1="%m [%4~] -%n- "
 else
-    export PS1="%m [%~] -%n- [W$WINDOW] "
+    export PS1="%m [%4~] -%n- [W$WINDOW] "
 fi
 
 setopt recexact
