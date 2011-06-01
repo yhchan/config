@@ -64,7 +64,7 @@ ls() { /bin/ls -F -G "$@"; }
 
 ## Environment Settings
 export LANG=en_US.UTF-8
-export PATH='/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/games/'
+export PATH='/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/games/:usr/local/git/bin'
 export MAIL="/var/mail/$USER"
 
 export EDITOR=vim
