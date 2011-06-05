@@ -60,7 +60,7 @@ alias cp='/bin/cp -i'
 alias mv='/bin/mv -i'
 alias rm='/bin/rm -i'
 alias b5='env LANG=zh_TW.Big5'
-ls() { /bin/ls -F -G "$@"; }
+ls() { /bin/ls --color=auto -F -G "$@"; }
 
 ## Environment Settings
 export LANG=en_US.UTF-8
