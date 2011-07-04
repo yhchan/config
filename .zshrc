@@ -63,7 +63,7 @@ alias mv='/bin/mv -i'
 alias rm='/bin/rm -i'
 alias b5='env LANG=zh_TW.Big5'
 
-if [ $OSTYPE = 'FreeBSD' ]; then 
+if [ $OSTYPE = 'FreeBSD' -o $OSTYPE = 'Darwin' ]; then
     ls() { /bin/ls -F -G "$@"; }
 elif [ $OSTYPE = 'Linux' ]; then 
     ls() { /bin/ls --color=auto -F -G "$@"; }
