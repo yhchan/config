@@ -1,0 +1,6 @@
+[submodule "bundle/oh-my-zsh"]
+	path = bundle/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh
+[submodule "bundle/oh-my-zsh-powerline-theme"]
+	path = bundle/oh-my-zsh-powerline-theme
+	url = https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme
