@@ -84,6 +84,13 @@ export TERMCAP='xterm|xterm-color|xterm-256color:Co#256:AB=\E[48;5;%dm:AF=\E[38;
 # pythonbrew
 [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
 
+# autojump
+if [ $OSTYPE = 'FreeBSD' ]; then
+    [[ -f /usr/local/share/autojump/autojump.zsh ]] && . /usr/local/share/autojump/autojump.zsh
+elif [ $OSTYPE = 'Darwin' ]; then 
+    [[ -f `brew --prefix`/etc/autojump.zsh ]] && . `brew --prefix`/etc/autojump.zsh
+fi
+
 # BEGIN of oh-my-zsh
 
 # Path to your oh-my-zsh configuration.
