@@ -81,6 +81,9 @@ bindkey '\e[4~' end-of-line
 # 256 color
 export TERMCAP='xterm|xterm-color|xterm-256color:Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm:tc=xterm-xfree86:'
 
+# Python related alias
+alias cleanpyc='/bin/find . -name "*.pyc" -delete'
+
 # pythonbrew
 [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
 
