@@ -57,6 +57,7 @@ alias cp='/bin/cp -i'
 alias mv='/bin/mv -i'
 alias rm='/bin/rm -i'
 alias b5='env LANG=zh_TW.Big5'
+alias cleanbak='find . -name "*~" -delete'
 
 if [ $OSTYPE = 'FreeBSD' -o $OSTYPE = 'Darwin' ]; then
     ls() { /bin/ls -F -G "$@"; }
