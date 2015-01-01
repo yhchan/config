@@ -68,7 +68,7 @@ fi
 ## Environment Settings
 export LANG=en_US.UTF-8
 
-export PATH="/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/games/:/usr/local/git/bin"
+export PATH="/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/games/:/usr/local/git/bin:$HOME/bin"
 export MAIL="/var/mail/$USER"
 
 export EDITOR=vim
@@ -83,7 +83,7 @@ bindkey '\e[4~' end-of-line
 export TERMCAP='xterm|xterm-color|xterm-256color:Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm:tc=xterm-xfree86:'
 
 # Python related alias
-alias cleanpyc='/bin/find . -name "*.pyc" -delete'
+alias cleanpyc='find . -name "*.pyc" -delete'
 
 # pythonbrew
 [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
@@ -136,3 +136,9 @@ plugins=(git virtualenvwrapper tmux)
 source $ZSH/oh-my-zsh.sh
 
 # ENE of oh-my-zsh
+
+# Override oh-my-zsh key binding
+if [[ -n "$TMUX" ]]; then
+  bindkey "^[[1~" beginning-of-line
+  bindkey "^[[4~" end-of-line
+fi
